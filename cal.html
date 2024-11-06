@@ -2,14 +2,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
-<body __processed_d2183d35-a427-446e-a600-db3d29b88cd0__="true"
-    bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d"
-    cz-shortcut-listen="true">
+<body>
 
-    <script language="javascript">
+    <script>
         function good() {
             var mwidth = eval(document.seetline1.width.value); //시공할 가로면적
             var mheight = eval(document.seetline1.height.value); //시공할 높이면적
@@ -26,8 +23,9 @@
             align="center" style="border-radius: 8px;">
             <tbody>
                 <tr align="middle">
-                    <td bgcolor="#4169E1" width="111" font="" color="#FFFFFF" style="border-radius: 4px;"><b>타일 크기
-                            선택</b></td>
+                    <td bgcolor="#4169E1" width="111" style="border-radius: 4px; color: #FFFFFF;">
+                        <b>타일 크기 선택</b>
+                    </td>
                     <td bgcolor="#FFFFFF" width="194" style="border-radius: 4px;">
                         <p>
                             <select style="BACKGROUND-COLOR: #F0F8FF" name="floorcover_width">
@@ -52,30 +50,27 @@
                         </p>
                     </td>
                     <td bgcolor="#E6E6FA" width="147" style="border-radius: 4px;">
-                        <p><span style="font-size:11pt;">&nbsp;<b>시공할 가로길이</b></span>
+                        <p><span style="font-size:11pt; color:black;">&nbsp;<b>시공할 가로길이</b></span>
                             <input size="7" name="width">
-                            cm
+                            <span style="color:black;">cm</span>
                         </p>
                     </td>
                     <td bgcolor="#E6E6FA" width="147" style="border-radius: 4px;">
-                        <p><span style="font-size:11pt;"><b>시공할 세로길이</b></span>
+                        <p><span style="font-size:11pt; color:black;">&nbsp;<b>시공할 세로길이</b></span>
                             <input size="7" name="height">
-                            cm
+                            <span style="color:black;">cm</span>
                         </p>
                     </td>
                     <td width="139" bgcolor="#4169E1" style="border-radius: 4px;">
                         <p>
-                            <font size="1">&nbsp;</font><a style="CURSOR: hand" onclick="good()" border="0"><b>
-                                    <font size="3" color="#FFFFFF">계산하기</font>
-                                    <font size="3"> </font>
-                                    <font size="3" color="#FFFFFF">[클릭]</font>
-                                </b></a>
-                            <font size="1"> </font>
+                            <span style="cursor: pointer;" onclick="good()">
+                                <b>
+                                    계산하기 [클릭]
+                                </b>
+                            </span>
                         </p>
                     </td>
                 </tr>
-
-
             </tbody>
         </table>
     </form>
