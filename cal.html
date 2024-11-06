@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body __processed_d2183d35-a427-446e-a600-db3d29b88cd0__="true"
+    bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d"
+    cz-shortcut-listen="true">
+
+    <script language="javascript">
+        function good() {
+            var mwidth = eval(document.seetline1.width.value); //시공할 가로면적
+            var mheight = eval(document.seetline1.height.value); //시공할 높이면적
+            var mfloorcover_width = eval(document.seetline1.floorcover_width.value); //구입할 타일의 폭
+            var mresult = Math.ceil(((mwidth * mheight) / mfloorcover_width)); // 위 값을 시공할 세로면적으로 곱한 후 
+
+            //이 아래가 계산 후 출력하는 페이지. n은 엔터기능임
+            alert("" + " 타일은 " + mresult + "장 정도 소요될것으로 예상됩니다.로스 감안해서 여유분을 조금 더 구매하시기를 권해드립니다.");
+        }
+    </script>
+    <div style="font-size: 20px;">Madfish DEV</div>
+    <form name="seetline1">
+        <table border="1" cellspacing="2" bordercolorlight="#d4d4d4" cellpadding="5" width="800" height="60"
+            align="center" style="border-radius: 8px;">
+            <tbody>
+                <tr align="middle">
+                    <td bgcolor="#4169E1" width="111" font="" color="#FFFFFF" style="border-radius: 4px;"><b>타일 크기
+                            선택</b></td>
+                    <td bgcolor="#FFFFFF" width="194" style="border-radius: 4px;">
+                        <p>
+                            <select style="BACKGROUND-COLOR: #F0F8FF" name="floorcover_width">
+                                <option value="648">타일크기 4.5cm x 18cm</option>
+                                <option value="120">타일크기 6cm x 20cm</option>
+                                <option value="144">타일크기 6cm x 24cm</option>
+                                <option value="112.5">타일크기 7.5cm x 15cm</option>
+                                <option value="225">타일크기 7.5cm x 30cm</option>
+                                <option value="200">타일크기 10cm x 20cm</option>
+                                <option value="300">타일크기 10cm x 30cm</option>
+                                <option value="400">타일크기 10cm x 40cm</option>
+                                <option value="504">쪽마루타일11.2cm x 45cm</option>
+                                <option value="100">타일크기 10cm x 10cm</option>
+                                <option value="225">타일크기 15cm x 15cm</option>
+                                <option value="400" selected="">타일크기 20cm x 20cm</option>
+                                <option value="900">타일크기 30cm x 30cm</option>
+                                <option value="3600">타일크기 60cm x 60cm</option>
+                                <option value="262.5">육각타일 17.5cm x 20cm</option>
+                                <option value="346">육각타일 20cm x 23cm</option>
+                                <option value="585">육각타일 26cm x 30cm</option>
+                            </select>
+                        </p>
+                    </td>
+                    <td bgcolor="#E6E6FA" width="147" style="border-radius: 4px;">
+                        <p><span style="font-size:11pt;">&nbsp;<b>시공할 가로길이</b></span>
+                            <input size="7" name="width">
+                            cm
+                        </p>
+                    </td>
+                    <td bgcolor="#E6E6FA" width="147" style="border-radius: 4px;">
+                        <p><span style="font-size:11pt;"><b>시공할 세로길이</b></span>
+                            <input size="7" name="height">
+                            cm
+                        </p>
+                    </td>
+                    <td width="139" bgcolor="#4169E1" style="border-radius: 4px;">
+                        <p>
+                            <font size="1">&nbsp;</font><a style="CURSOR: hand" onclick="good()" border="0"><b>
+                                    <font size="3" color="#FFFFFF">계산하기</font>
+                                    <font size="3"> </font>
+                                    <font size="3" color="#FFFFFF">[클릭]</font>
+                                </b></a>
+                            <font size="1"> </font>
+                        </p>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>
